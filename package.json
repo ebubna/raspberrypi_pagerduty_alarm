@@ -1,0 +1,26 @@
+{
+  "name": "raspberrypi_pagerduty_alarm",
+  "version": "1.0.1",
+  "description": "node app to check pagerduty api and play mp3 if there is an active incident",
+  "main": "pdalarm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebubna/raspberrypi_pagerduty_alarm.git"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "pagerduty",
+    "mp3",
+    "alarm"
+  ],
+  "author": "ebubna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebubna/raspberrypi_pagerduty_alarm/issues"
+  },
+  "homepage": "https://github.com/ebubna/raspberrypi_pagerduty_alarm#readme"
+}
