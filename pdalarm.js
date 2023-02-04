@@ -40,8 +40,9 @@ const checkForIncidents = () => {
   }).on('error', (err) => {
     console.error(err);
   });
+  child_process.exit
 };
-mpg123.kill()
+
 
 setInterval(checkForIncidents, 60 * 1000); // Check every 60 seconds
 
