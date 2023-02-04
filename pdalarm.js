@@ -23,7 +23,7 @@ const checkForIncidents = () => {
 
     res.on('end', () => {
       const incidents = JSON.parse(data).incidents;
-      if (incidents.length > 0) {
+      if (incidents.status == 'triggered') {
         const mostRecentIncident = incidents[0];
         console.log(mostRecentIncident.summary);
 
