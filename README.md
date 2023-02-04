@@ -5,7 +5,6 @@ Requires mpg123 and expects alarm.mp3 to be present in the directory<br>
 2. cd into directory<br>
 3. change api key
 4. upload your mp3 and change filename
-4. npm init<br>
 5. npm i<br>
 6. sudo apt install mpg123<br>
 7. node pdalarm.js<br>
