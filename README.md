@@ -8,4 +8,6 @@ Requires mpg123 and expects alarm.mp3 to be present in the directory<br>
 5. npm i<br>
 6. sudo apt install mpg123<br>
 7. node pdalarm.js<br>
-8. volume up!
+8. volume up!<br>
+<br>
+tested with node v12.22.9 and npm v8.5.1
