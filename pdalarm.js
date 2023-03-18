@@ -22,10 +22,10 @@ const checkForIncidents = () => {
     });
 
     res.on('end', () => {
-      const incidents = JSON.parse(data).incidents;
-      if (incidents.status == 'triggered') {
-        const mostRecentIncident = incidents[0];
-        console.log(mostRecentIncident.summary);
+        const incidents = JSON.parse(data).incidents;
+        if (incidents.status == 'triggered') {
+          const mostRecentIncident = incidents[0];
+          console.log(mostRecentIncident.summary);
 
         // Play an MP3 file if there is a current incident
         child_process.exec('mpg123 alarm.mp3', (err, stdout, stderr) => {
@@ -40,9 +40,9 @@ const checkForIncidents = () => {
   }).on('error', (err) => {
     console.error(err);
   });
-  child_process.exit
+  
 };
-
+child_process.exit
 
 setInterval(checkForIncidents, 60 * 1000); // Check every 60 seconds
 
